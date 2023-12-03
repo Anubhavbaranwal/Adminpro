@@ -50,8 +50,8 @@ const Maincontainer = ({ data }) => {
 
   //edit data
   const edit = (id) => {
-    const getdata = filterData(id, searchresult);
-    setSearchresult(getdata);
+    // const getdata = filterData(id, searchresult);
+    // setSearchresult(getdata);
   };
   return (
     <div>
@@ -82,7 +82,7 @@ const Maincontainer = ({ data }) => {
         searchresult.map((data) => {
           return (
             <div
-              className="text-white grid flex  mx-5 grid-cols-4 gap-4 my-4 h-[25px"
+              className="text-white grid   mx-5 grid-cols-4 gap-4 my-4 py-2"
               key={data?.id}
             >
               <input type="checkbox" />
